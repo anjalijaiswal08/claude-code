@@ -24,7 +24,7 @@ export async function POST(req: Request) {
     },
   });
 
-  // Reconstruct the VirtualFileSystem from serialized data
+  // Reconstruct the VirtualFileSystem from serialized data.
   const fileSystem = new VirtualFileSystem();
   fileSystem.deserializeFromNodes(files);
 
